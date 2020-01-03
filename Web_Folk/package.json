@@ -1,0 +1,17 @@
+{
+  "name": "Jin_t5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-css": "node-sass -r scss/ -o css/ && node-sass -wr scss/ -o css/",
+    "build-css": "node-sass -r --output-style=compressed scss/ -o dist/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
