@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap');
+
+%capitalize {
+  text-transform: capitalize;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
