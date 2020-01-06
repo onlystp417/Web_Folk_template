@@ -1,8 +1,15 @@
 @import "global/font";
-
 @import "global/color";
-
 @import "global/reset";
 
-@import "component/"
+@import "component/dot";
+@import "component/card";
+@import "component/label";
+@import "component/button";
+@import "component/article";
 
+@import "layout/header";
+@import "layout/banner";
+@import "layout/sample";
+@import "layout/team";
+@import "layout/footer";
