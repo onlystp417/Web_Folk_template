@@ -1,0 +1,22 @@
+header {
+  background-color: $purple;
+  text-align: center;
+  nav {
+    @extend %container;
+    @include area(20px, 0);
+  }
+  a {
+    color: $white;
+    @extend %capitalize;
+    @include area(0, 10px);
+    &:hover {
+      color: $fuchsia;
+    }
+  }
+}
+
+
+
+
+
+
