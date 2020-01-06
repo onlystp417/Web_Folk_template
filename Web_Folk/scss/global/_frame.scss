@@ -1,0 +1,4 @@
+@mixin container($x) {
+  padding-left: $x;
+  padding-right: $x;
+} 
