@@ -1,0 +1,38 @@
+.banner {
+  background: center/cover no-repeat url(../../images/banner.png);
+  height: 95vh;
+  color: $white;
+  text-align: center;
+  padding-top: 150px;
+  h1 {
+    font-style: italic;
+    font-size: 3em;
+  }
+  h1 span:first-child {
+    @extend %uppercase;
+    @extend %libre;
+  }
+  h1 span:last-child {
+    @extend %lobster;
+  }
+  h2 {
+    @extend %capitalize;
+    @extend %libre;
+    font-size: 1em;
+    letter-spacing: .3em;
+    margin-bottom: 80px;
+  }
+  p {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    @extend %libre;
+  }
+  p:first-letter {
+    @extend %uppercase;
+  }
+  > span {
+    @include vertical-dot;
+    margin-bottom: 20px;
+  }
+}
