@@ -1,9 +1,10 @@
 .banner {
   background: center/cover no-repeat url(../../images/banner.png);
-  height: 95vh;
+  height: 90vh;
   color: $white;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
   h1 {
     font-style: italic;
     font-size: 3em;
@@ -20,12 +21,12 @@
     @extend %libre;
     font-size: 1em;
     letter-spacing: .3em;
-    margin-bottom: 80px;
+    margin-bottom: 10vh;
   }
   p {
     width: 300px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
     @extend %libre;
   }
   p:first-letter {
@@ -33,6 +34,6 @@
   }
   > span {
     @include vertical-dot;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
   }
 }
