@@ -1,7 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap");
 /* line 3, scss/global/_font.scss */
-header a {
+.banner h1 span:first-child, .banner h2, .banner p, .sample a + a h3, .team > h4, .member > div h2 {
+  font-family: 'Libre Baskerville';
+  font-weight: normal; }
+
+/* line 8, scss/global/_font.scss */
+.sample .label h2, .team .label p, .member > div h3 {
+  font-family: 'Lato';
+  font-weight: normal; }
+
+/* line 13, scss/global/_font.scss */
+.banner h1 span:last-child {
+  font-family: 'Lobster';
+  font-weight: 300; }
+
+/* line 18, scss/global/_font.scss */
+header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .contact {
   text-transform: capitalize; }
+
+/* line 22, scss/global/_font.scss */
+.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter {
+  text-transform: uppercase; }
 
 /* line 2, scss/global/_reset.scss */
 * {
@@ -35,3 +54,192 @@ header {
     /* line 12, scss/layout/_header.scss */
     header a:hover {
       color: #CF4976; }
+
+/* line 1, scss/layout/_banner.scss */
+.banner {
+  background: center/cover no-repeat url(../../images/banner.png);
+  color: #fff;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 15vh; }
+  /* line 8, scss/layout/_banner.scss */
+  .banner h1 {
+    font-style: italic;
+    font-size: 3em; }
+  /* line 19, scss/layout/_banner.scss */
+  .banner h2 {
+    font-size: 1em;
+    letter-spacing: .3em;
+    margin-bottom: 15vh; }
+  /* line 26, scss/layout/_banner.scss */
+  .banner p {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5vh; }
+  /* line 35, scss/layout/_banner.scss */
+  .banner > span {
+    display: block;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 3vh; }
+
+/* line 1, scss/layout/_sample.scss */
+.sample {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap; }
+  /* line 4, scss/layout/_sample.scss */
+  .sample .label {
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    padding: 0 80px;
+    z-index: 1; }
+    /* line 12, scss/layout/_sample.scss */
+    .sample .label h2 {
+      background: #FF2D49;
+      color: #fff;
+      font-weight: light;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.2em; }
+    /* line 19, scss/layout/_sample.scss */
+    .sample .label:after {
+      content: "";
+      display: block;
+      margin: auto;
+      width: 0px;
+      height: 0px;
+      border-top: 15px solid #FF2D49;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent; }
+  /* line 23, scss/layout/_sample.scss */
+  .sample a + a {
+    display: block;
+    position: relative;
+    flex: 0 0 100%; }
+    @media (min-width: 576px) {
+      /* line 23, scss/layout/_sample.scss */
+      .sample a + a {
+        flex: 0 0 50%; } }
+    @media (min-width: 768px) {
+      /* line 23, scss/layout/_sample.scss */
+      .sample a + a {
+        flex: 0 0 33.33333%; } }
+    @media (min-width: 992px) {
+      /* line 23, scss/layout/_sample.scss */
+      .sample a + a {
+        flex: 0 0 25%; } }
+    /* line 25, scss/layout/_sample.scss */
+    .sample a + a img {
+      width: 100%;
+      vertical-align: middle; }
+    /* line 28, scss/layout/_sample.scss */
+    .sample a + a div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #CF4976;
+      text-align: center;
+      opacity: 0; }
+      /* line 37, scss/layout/_sample.scss */
+      .sample a + a div::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle; }
+      /* line 43, scss/layout/_sample.scss */
+      .sample a + a div:hover {
+        opacity: .8;
+        transition: .5s; }
+    /* line 48, scss/layout/_sample.scss */
+    .sample a + a h3 {
+      display: inline-block;
+      color: #fff;
+      font-size: 1.6em;
+      vertical-align: middle; }
+
+/* line 1, scss/layout/_team.scss */
+.team {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap; }
+  /* line 3, scss/layout/_team.scss */
+  .team > h4 {
+    flex: 0 0 100%;
+    margin-bottom: 35px;
+    font-size: 1.5em;
+    color: #FF2D49;
+    text-align: center; }
+  /* line 12, scss/layout/_team.scss */
+  .team .label {
+    display: block;
+    flex: 0 0 100%;
+    order: -1;
+    margin-bottom: 35px; }
+    /* line 17, scss/layout/_team.scss */
+    .team .label p {
+      background: #FF2D49;
+      color: #fff;
+      font-weight: light;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 1.2em; }
+  /* line 23, scss/layout/_team.scss */
+  .team .label::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid #FF2D49;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent; }
+
+/* line 31, scss/layout/_team.scss */
+.member {
+  flex: 0 0 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 18%; }
+  /* line 35, scss/layout/_team.scss */
+  .member > div {
+    flex: 0 0 100%;
+    margin-bottom: 40px; }
+    /* line 38, scss/layout/_team.scss */
+    .member > div img {
+      width: 100%;
+      vertical-align: middle;
+      margin-bottom: 20px; }
+    /* line 42, scss/layout/_team.scss */
+    .member > div h2 {
+      color: #FF2D49;
+      font-size: 2.5em;
+      text-align: center; }
+    /* line 49, scss/layout/_team.scss */
+    .member > div h3 {
+      font-size: 1.1em;
+      text-align: center; }
+    @media (min-width: 768px) {
+      /* line 35, scss/layout/_team.scss */
+      .member > div {
+        flex: 0 0 50%; } }
+
+/* line 61, scss/layout/_team.scss */
+.contact {
+  flex: 0 0 215px;
+  padding: 10px 0;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  text-align: center; }
