@@ -1,0 +1,19 @@
+@mixin card {
+  display: block;
+  position: relative;
+  flex: 0 0 100%;
+  @media (min-width: 576px) {
+    flex: 0 0 50%;
+  }
+  @media (min-width: 768px) {
+    flex: 0 0 33.33333%
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 25%
+  }
+}
+
+@mixin card-img {
+  width: 100%;
+  vertical-align: middle;
+}

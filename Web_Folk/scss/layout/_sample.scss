@@ -1,5 +1,6 @@
 .sample {
   position: relative;
+  @include row;
   .label {
     display: block;
     position: absolute;
@@ -7,14 +8,52 @@
     left: 0;
     right: 0;
     padding: 0 80px;
-    h3 {
+    z-index: 1;
+    h2 {
       @extend %capitalize;
       @include label;
       height: 50px;
       line-height: 50px;
+      font-size: 1.2em;
+    }
+    &:after {
+      @include arrow;
     }
   }
-  .label:after {
-    @include arrow;
+  a + a {
+    @include card;
+    img {
+      @include card-img;
+    }
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $fuchsia;
+      text-align: center;
+      opacity: 0;
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      &:hover {
+        opacity: .8;
+        transition: .5s;
+      }
+    }
+    h3 {
+      display: inline-block;
+      @extend %libre;
+      color: $white;
+      font-size: 1.6em;
+      vertical-align: middle;
+    }
+    h3::first-letter {
+      @extend %uppercase;
+    }
   }
 }

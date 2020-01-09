@@ -10,3 +10,9 @@
 @mixin apart($y, $x) {
   margin: $y $x;
 }
+
+@mixin row {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
