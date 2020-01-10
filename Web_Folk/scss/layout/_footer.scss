@@ -6,6 +6,7 @@ footer {
       @extend %capitalize;
     }
     a {
+      display: inline-block;
       color: $red;
       &::first-letter {
         @extend %uppercase;

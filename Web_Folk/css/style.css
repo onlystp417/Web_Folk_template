@@ -343,8 +343,9 @@ footer {
     text-align: center; }
     /* line 8, scss/layout/_footer.scss */
     footer div a {
+      display: inline-block;
       color: #FF2D49; }
-      /* line 13, scss/layout/_footer.scss */
+      /* line 14, scss/layout/_footer.scss */
       footer div a:hover {
         color: #FF2D49;
         text-decoration: underline; }
