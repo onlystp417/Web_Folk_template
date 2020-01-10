@@ -49,15 +49,16 @@ header {
 
 /* line 1, scss/component/_footer.scss */
 footer {
-  padding: 30px 30px; }
-  /* line 3, scss/component/_footer.scss */
+  padding: 30px 30px;
+  background: #E5E4E4; }
+  /* line 4, scss/component/_footer.scss */
   footer div {
     text-align: center; }
-    /* line 8, scss/component/_footer.scss */
+    /* line 9, scss/component/_footer.scss */
     footer div a {
       display: inline-block;
       color: #FF2D49; }
-      /* line 14, scss/component/_footer.scss */
+      /* line 15, scss/component/_footer.scss */
       footer div a:hover {
         color: #FF2D49;
         text-decoration: underline; }

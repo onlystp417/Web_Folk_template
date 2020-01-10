@@ -1,5 +1,6 @@
 footer {
   @include area(30px, 30px);
+  background: $gray;
   div {
     text-align: center;
     span {
