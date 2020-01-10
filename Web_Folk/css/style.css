@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 /* line 6, scss/global/_reset.scss */
-body, h1, h2, h3, h4, ul, p {
+body, h1, h2, h3, h4, p {
   margin: 0; }
 
 /* line 10, scss/global/_reset.scss */
