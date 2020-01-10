@@ -57,7 +57,7 @@ header {
 
 /* line 1, scss/layout/_banner.scss */
 .banner {
-  background: center/cover no-repeat url(../../images/banner.png);
+  background: center/cover no-repeat url(../images/banner.png);
   color: #fff;
   text-align: center;
   padding-top: 15vh;
@@ -272,7 +272,7 @@ header {
 
 /* line 1, scss/layout/_descride.scss */
 .describe {
-  background: url("../../images/sea-horse-bg.jpg") center/cover no-repeat fixed;
+  background: url("../images/sea-horse-bg.jpg") center/cover no-repeat fixed;
   padding: 0 15%;
   padding-top: 80px;
   padding-bottom: 30px;
