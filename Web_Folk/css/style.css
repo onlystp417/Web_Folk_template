@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap");
 /* line 3, scss/global/_font.scss */
-.banner h1 span:first-child, .banner h2, .banner p, .sample a + a h3, .team > h4, .member > div h2 {
+.banner h1 span:first-child, .banner h2, .banner p, .sample a + a h3, .team > h4, .member > div h2, .describe article h4 {
   font-family: 'Libre Baskerville';
   font-weight: normal; }
 
 /* line 8, scss/global/_font.scss */
-.sample .label h2, .team .label p, .member > div h3 {
+.sample .label h2, .team .label p, .member > div h3, .describe a {
   font-family: 'Lato';
   font-weight: normal; }
 
@@ -15,11 +15,11 @@
   font-weight: 300; }
 
 /* line 18, scss/global/_font.scss */
-header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .contact {
+header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .contact, .describe article h4 {
   text-transform: capitalize; }
 
 /* line 22, scss/global/_font.scss */
-.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter {
+.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter, .describe a {
   text-transform: uppercase; }
 
 /* line 2, scss/global/_reset.scss */
@@ -243,3 +243,59 @@ header {
   background-color: #000;
   color: #fff;
   text-align: center; }
+
+/* line 1, scss/layout/_descride.scss */
+.describe {
+  background: url("../../images/sea-horse-bg.jpg") center/200% no-repeat fixed;
+  padding: 0 15%;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  color: #fff; }
+  @media (min-width: 992px) {
+    /* line 7, scss/layout/_descride.scss */
+    .describe article {
+      column-count: 2;
+      column-gap: 9em; } }
+  /* line 12, scss/layout/_descride.scss */
+  .describe article h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px; }
+  /* line 18, scss/layout/_descride.scss */
+  .describe article p {
+    margin-bottom: 15px;
+    font-size: .9em;
+    font-weight: 400; }
+  /* line 23, scss/layout/_descride.scss */
+  .describe article .devider {
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 65px; }
+    /* line 27, scss/layout/_descride.scss */
+    .describe article .devider span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 8px; }
+  @media (min-width: 992px) {
+    /* line 32, scss/layout/_descride.scss */
+    .describe article .gutter::before {
+      content: "";
+      display: block;
+      height: 260px; } }
+  /* line 40, scss/layout/_descride.scss */
+  .describe a {
+    display: block;
+    width: 210px;
+    margin: auto;
+    margin-top: 125px;
+    padding: 10px 0;
+    background: #fff;
+    color: #000;
+    text-align: center; }
+
+@media (min-width: 992px) {
+  /* line 56, scss/layout/_descride.scss */
+  .switch {
+    opacity: 0; } }

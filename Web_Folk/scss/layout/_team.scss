@@ -1,5 +1,5 @@
 .team {
-  @include row;
+  @include flexbox;
   > h4 {
     flex: 0 0 100%;
     margin-bottom: 35px;
@@ -30,7 +30,7 @@
 
 .member {
   flex: 0 0 100%;
-  @include row;
+  @include flexbox;
   @include area(0, 18%);
   > div {
     flex: 0 0 100%;

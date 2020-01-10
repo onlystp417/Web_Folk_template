@@ -1,6 +1,6 @@
 .sample {
   position: relative;
-  @include row;
+  @include flexbox;
   .label {
     display: block;
     position: absolute;

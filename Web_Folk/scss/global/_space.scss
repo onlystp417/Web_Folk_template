@@ -11,7 +11,7 @@
   margin: $y $x;
 }
 
-@mixin row {
+@mixin flexbox {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
