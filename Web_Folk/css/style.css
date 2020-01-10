@@ -113,18 +113,21 @@ header {
     top: -50px;
     left: 0;
     right: 0;
-    padding: 0 80px;
+    padding: 0 25%;
     z-index: 1; }
-    /* line 12, scss/layout/_sample.scss */
+    @media (min-width: 576px) {
+      /* line 4, scss/layout/_sample.scss */
+      .sample .label {
+        padding: 0 30%; } }
+    /* line 15, scss/layout/_sample.scss */
     .sample .label h2 {
       background: #FF2D49;
       color: #fff;
-      font-weight: light;
       text-align: center;
       height: 50px;
       line-height: 50px;
       font-size: 1.2em; }
-    /* line 19, scss/layout/_sample.scss */
+    /* line 22, scss/layout/_sample.scss */
     .sample .label:after {
       content: "";
       display: block;
@@ -134,28 +137,28 @@ header {
       border-top: 15px solid #FF2D49;
       border-left: 15px solid transparent;
       border-right: 15px solid transparent; }
-  /* line 23, scss/layout/_sample.scss */
+  /* line 26, scss/layout/_sample.scss */
   .sample a + a {
     display: block;
     position: relative;
     flex: 0 0 100%; }
     @media (min-width: 576px) {
-      /* line 23, scss/layout/_sample.scss */
+      /* line 26, scss/layout/_sample.scss */
       .sample a + a {
         flex: 0 0 50%; } }
     @media (min-width: 768px) {
-      /* line 23, scss/layout/_sample.scss */
+      /* line 26, scss/layout/_sample.scss */
       .sample a + a {
         flex: 0 0 33.33333%; } }
     @media (min-width: 992px) {
-      /* line 23, scss/layout/_sample.scss */
+      /* line 26, scss/layout/_sample.scss */
       .sample a + a {
         flex: 0 0 25%; } }
-    /* line 25, scss/layout/_sample.scss */
+    /* line 28, scss/layout/_sample.scss */
     .sample a + a img {
       width: 100%;
       vertical-align: middle; }
-    /* line 28, scss/layout/_sample.scss */
+    /* line 31, scss/layout/_sample.scss */
     .sample a + a div {
       position: absolute;
       top: 0;
@@ -165,17 +168,17 @@ header {
       background: #CF4976;
       text-align: center;
       opacity: 0; }
-      /* line 37, scss/layout/_sample.scss */
+      /* line 40, scss/layout/_sample.scss */
       .sample a + a div::before {
         content: "";
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-      /* line 43, scss/layout/_sample.scss */
+      /* line 46, scss/layout/_sample.scss */
       .sample a + a div:hover {
         opacity: .8;
         transition: .5s; }
-    /* line 48, scss/layout/_sample.scss */
+    /* line 51, scss/layout/_sample.scss */
     .sample a + a h3 {
       display: inline-block;
       color: #fff;
@@ -204,7 +207,6 @@ header {
     .team .label p {
       background: #FF2D49;
       color: #fff;
-      font-weight: light;
       text-align: center;
       padding: 20px 10px;
       font-size: 1.2em; }
