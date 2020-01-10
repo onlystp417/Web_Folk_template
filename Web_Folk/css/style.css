@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap");
 /* line 2, scss/global/_reset.scss */
-* {
+*, *::before, *::after {
   box-sizing: border-box; }
 
 /* line 6, scss/global/_reset.scss */
