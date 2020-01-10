@@ -66,17 +66,31 @@ header {
   .banner h1 {
     font-style: italic;
     font-size: 3em; }
-  /* line 19, scss/layout/_banner.scss */
+    @media (min-width: 992px) {
+      /* line 8, scss/layout/_banner.scss */
+      .banner h1 {
+        font-size: 3.8em; } }
+  /* line 22, scss/layout/_banner.scss */
   .banner h2 {
     font-size: 1em;
     letter-spacing: .3em;
     margin-bottom: 15vh; }
-  /* line 26, scss/layout/_banner.scss */
+    @media (min-width: 992px) {
+      /* line 22, scss/layout/_banner.scss */
+      .banner h2 {
+        font-size: 1.5em; } }
+  /* line 32, scss/layout/_banner.scss */
   .banner p {
     width: 300px;
     margin: auto;
-    margin-bottom: 5vh; }
-  /* line 35, scss/layout/_banner.scss */
+    margin-bottom: 5vh;
+    line-height: 1.5; }
+    @media (min-width: 992px) {
+      /* line 32, scss/layout/_banner.scss */
+      .banner p {
+        width: 400px;
+        font-size: 1.25em; } }
+  /* line 46, scss/layout/_banner.scss */
   .banner > span {
     display: block;
     margin: auto;

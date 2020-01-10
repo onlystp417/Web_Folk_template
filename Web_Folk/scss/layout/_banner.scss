@@ -8,6 +8,9 @@
   h1 {
     font-style: italic;
     font-size: 3em;
+    @media (min-width: 992px) {
+      font-size: 3.8em;
+    }
   }
   h1 span:first-child {
     @extend %uppercase;
@@ -22,12 +25,20 @@
     font-size: 1em;
     letter-spacing: .3em;
     margin-bottom: 15vh;
+    @media (min-width: 992px) {
+      font-size: 1.5em;
+    }
   }
   p {
     width: 300px;
     margin: auto;
     margin-bottom: 5vh;
     @extend %libre;
+    line-height: 1.5;
+    @media (min-width: 992px) {
+      width: 400px;
+      font-size: 1.25em;
+    }
   }
   p:first-letter {
     @extend %uppercase;
