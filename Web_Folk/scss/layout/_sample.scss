@@ -22,7 +22,7 @@
       line-height: 50px;
       font-size: 1.2em;
     }
-    &:after {
+    &::after {
       @include arrow;
     }
   }
@@ -37,7 +37,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: $fuchsia;
+      background: $fuchsia-opacity;
       text-align: center;
       opacity: 0;
       &::before {
@@ -47,7 +47,7 @@
         vertical-align: middle;
       }
       &:hover {
-        opacity: .8;
+        opacity: 1;
         transition: .5s;
       }
     }
