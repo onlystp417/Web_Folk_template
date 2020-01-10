@@ -1,0 +1,19 @@
+footer {
+  @include area(30px, 30px);
+  div {
+    text-align: center;
+    span {
+      @extend %capitalize;
+    }
+    a {
+      color: $red;
+      &::first-letter {
+        @extend %uppercase;
+      }
+      &:hover {
+        color: $red; 
+        text-decoration: underline;
+      }
+    }
+  }
+}

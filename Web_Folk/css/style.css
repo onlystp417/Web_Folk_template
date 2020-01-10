@@ -15,11 +15,11 @@
   font-weight: 300; }
 
 /* line 18, scss/global/_font.scss */
-header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .contact, .describe article h4 {
+header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .contact, .describe article h4, footer div span {
   text-transform: capitalize; }
 
 /* line 22, scss/global/_font.scss */
-.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter, .describe a {
+.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter, .describe a, footer div a::first-letter {
   text-transform: uppercase; }
 
 /* line 2, scss/global/_reset.scss */
@@ -326,3 +326,17 @@ header {
   /* line 61, scss/layout/_descride.scss */
   .switch {
     opacity: 0; } }
+
+/* line 1, scss/layout/_footer.scss */
+footer {
+  padding: 30px 30px; }
+  /* line 3, scss/layout/_footer.scss */
+  footer div {
+    text-align: center; }
+    /* line 8, scss/layout/_footer.scss */
+    footer div a {
+      color: #FF2D49; }
+      /* line 13, scss/layout/_footer.scss */
+      footer div a:hover {
+        color: #FF2D49;
+        text-decoration: underline; }
