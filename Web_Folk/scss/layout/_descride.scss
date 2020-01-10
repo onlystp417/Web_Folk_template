@@ -48,6 +48,11 @@
     @extend %lato;
     color: $black;
     text-align: center;
+    &:hover {
+      background: $red;
+      color: $white;
+      transition: .5s;
+    }
   }
 }
 

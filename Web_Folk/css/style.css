@@ -260,6 +260,11 @@ header {
   background-color: #000;
   color: #fff;
   text-align: center; }
+  /* line 70, scss/layout/_team.scss */
+  .contact:hover {
+    background: #FF2D49;
+    color: #fff;
+    transition: .5s; }
 
 /* line 1, scss/layout/_descride.scss */
 .describe {
@@ -311,8 +316,13 @@ header {
     background: #fff;
     color: #000;
     text-align: center; }
+    /* line 51, scss/layout/_descride.scss */
+    .describe a:hover {
+      background: #FF2D49;
+      color: #fff;
+      transition: .5s; }
 
 @media (min-width: 992px) {
-  /* line 56, scss/layout/_descride.scss */
+  /* line 61, scss/layout/_descride.scss */
   .switch {
     opacity: 0; } }

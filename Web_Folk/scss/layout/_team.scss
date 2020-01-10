@@ -67,4 +67,9 @@
   color: $white;
   text-align: center;
   @extend %capitalize;
+  &:hover {
+    background: $red;
+    color: $white;
+    transition: .5s;
+  }
 }
