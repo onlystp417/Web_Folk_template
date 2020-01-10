@@ -1,9 +1,12 @@
 .describe {
-  background: url('../../images/sea-horse-bg.jpg') center/200% no-repeat fixed;
+  background: url('../../images/sea-horse-bg.jpg') center/cover no-repeat fixed;
   @include area(0, 15%);
   padding-top: 80px;
   padding-bottom: 30px;
   color: $white;
+  @media (min-width: 576px) {
+    background-size: 200%;
+  }
   article {
     @media (min-width: 992px) {
       column-count: 2;

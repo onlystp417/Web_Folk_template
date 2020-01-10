@@ -268,31 +268,35 @@ header {
 
 /* line 1, scss/layout/_descride.scss */
 .describe {
-  background: url("../../images/sea-horse-bg.jpg") center/200% no-repeat fixed;
+  background: url("../../images/sea-horse-bg.jpg") center/cover no-repeat fixed;
   padding: 0 15%;
   padding-top: 80px;
   padding-bottom: 30px;
   color: #fff; }
+  @media (min-width: 576px) {
+    /* line 1, scss/layout/_descride.scss */
+    .describe {
+      background-size: 200%; } }
   @media (min-width: 992px) {
-    /* line 7, scss/layout/_descride.scss */
+    /* line 10, scss/layout/_descride.scss */
     .describe article {
       column-count: 2;
       column-gap: 9em; } }
-  /* line 12, scss/layout/_descride.scss */
+  /* line 15, scss/layout/_descride.scss */
   .describe article h4 {
     font-size: 1.8em;
     margin-bottom: 15px; }
-  /* line 18, scss/layout/_descride.scss */
+  /* line 21, scss/layout/_descride.scss */
   .describe article p {
     margin-bottom: 15px;
     font-size: .9em;
     font-weight: 400; }
-  /* line 23, scss/layout/_descride.scss */
+  /* line 26, scss/layout/_descride.scss */
   .describe article .devider {
     text-align: center;
     margin-top: 125px;
     margin-bottom: 65px; }
-    /* line 27, scss/layout/_descride.scss */
+    /* line 30, scss/layout/_descride.scss */
     .describe article .devider span {
       display: inline-block;
       width: 8px;
@@ -301,12 +305,12 @@ header {
       border-radius: 50%;
       margin: 0 8px; }
   @media (min-width: 992px) {
-    /* line 32, scss/layout/_descride.scss */
+    /* line 35, scss/layout/_descride.scss */
     .describe article .gutter::before {
       content: "";
       display: block;
       height: 260px; } }
-  /* line 40, scss/layout/_descride.scss */
+  /* line 43, scss/layout/_descride.scss */
   .describe a {
     display: block;
     width: 210px;
@@ -316,14 +320,14 @@ header {
     background: #fff;
     color: #000;
     text-align: center; }
-    /* line 51, scss/layout/_descride.scss */
+    /* line 54, scss/layout/_descride.scss */
     .describe a:hover {
       background: #FF2D49;
       color: #fff;
       transition: .5s; }
 
 @media (min-width: 992px) {
-  /* line 61, scss/layout/_descride.scss */
+  /* line 64, scss/layout/_descride.scss */
   .switch {
     opacity: 0; } }
 
