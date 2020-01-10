@@ -277,7 +277,7 @@ header {
   padding-top: 80px;
   padding-bottom: 30px;
   color: #fff; }
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     /* line 1, scss/layout/_descride.scss */
     .describe {
       background-size: 200%; } }
