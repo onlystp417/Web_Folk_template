@@ -41,21 +41,11 @@
     }
   }
   a {
-    display: block;
-    width: 210px;
-    margin: auto;
-    margin-top: 125px;
+    @include button;
     @include area(10px, 0);
+    margin-top: 125px;
     background: $white;
-    @extend %uppercase;
-    @extend %lato;
     color: $black;
-    text-align: center;
-    &:hover {
-      background: $red;
-      color: $white;
-      transition: .5s;
-    }
   }
 }
 
@@ -63,12 +53,6 @@
 
 .switch {
   @media (min-width: 992px) {
-    // display: none;
-    opacity: 0;
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   height: 100px;
-    // }
+    display: none;
   }
 }

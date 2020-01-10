@@ -1,27 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap");
-/* line 3, scss/global/_font.scss */
-.banner h1 span:first-child, .banner h2, .banner p, .sample a + a h3, .team > h4, .member > div h2, .describe article h4 {
-  font-family: 'Libre Baskerville';
-  font-weight: normal; }
-
-/* line 8, scss/global/_font.scss */
-.sample .label h2, .team .label p, .member > div h3, .describe a {
-  font-family: 'Lato';
-  font-weight: normal; }
-
-/* line 13, scss/global/_font.scss */
-.banner h1 span:last-child {
-  font-family: 'Lobster';
-  font-weight: 300; }
-
-/* line 18, scss/global/_font.scss */
-header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .contact, .describe article h4, footer div span {
-  text-transform: capitalize; }
-
-/* line 22, scss/global/_font.scss */
-.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter, .describe a, footer div a::first-letter {
-  text-transform: uppercase; }
-
 /* line 2, scss/global/_reset.scss */
 * {
   box-sizing: border-box; }
@@ -35,25 +12,63 @@ a, a:hover {
   text-decoration: none;
   color: inherit; }
 
+/* line 3, scss/global/_typography.scss */
+.banner h1 span:first-child, .banner h2, .banner p, .sample a + a h3, .team > h4, .member > div h2, .describe article h4 {
+  font-family: 'Libre Baskerville';
+  font-weight: normal; }
+
+/* line 8, scss/global/_typography.scss */
+.sample .label h2, .team .label p, .member > div h3, .contact, .describe a {
+  font-family: 'Lato';
+  font-weight: normal; }
+
+/* line 13, scss/global/_typography.scss */
+.banner h1 span:last-child {
+  font-family: 'Lobster';
+  font-weight: 300; }
+
+/* line 18, scss/global/_typography.scss */
+header a, footer div span, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .describe article h4 {
+  text-transform: capitalize; }
+
+/* line 22, scss/global/_typography.scss */
+footer div a::first-letter, .banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter, .contact, .describe a {
+  text-transform: uppercase; }
+
 /* line 1, scss/global/_space.scss */
 header nav {
   width: 90%;
   margin: auto; }
 
-/* line 1, scss/layout/_header.scss */
+/* line 1, scss/component/_header.scss */
 header {
   background-color: #370835;
   text-align: center; }
-  /* line 4, scss/layout/_header.scss */
+  /* line 4, scss/component/_header.scss */
   header nav {
     padding: 20px 0; }
-  /* line 8, scss/layout/_header.scss */
+  /* line 8, scss/component/_header.scss */
   header a {
     color: #fff;
     padding: 0 10px; }
-    /* line 12, scss/layout/_header.scss */
+    /* line 12, scss/component/_header.scss */
     header a:hover {
       color: #CF4976; }
+
+/* line 1, scss/component/_footer.scss */
+footer {
+  padding: 30px 30px; }
+  /* line 3, scss/component/_footer.scss */
+  footer div {
+    text-align: center; }
+    /* line 8, scss/component/_footer.scss */
+    footer div a {
+      display: inline-block;
+      color: #FF2D49; }
+      /* line 14, scss/component/_footer.scss */
+      footer div a:hover {
+        color: #FF2D49;
+        text-decoration: underline; }
 
 /* line 1, scss/layout/_banner.scss */
 .banner {
@@ -257,14 +272,15 @@ header {
 
 /* line 61, scss/layout/_team.scss */
 .contact {
-  flex: 0 0 215px;
-  padding: 10px 0;
+  display: block;
+  width: 210px;
   margin: auto;
+  padding: 10px 0;
+  text-align: center;
   margin-bottom: 45px;
   background-color: #000;
-  color: #fff;
-  text-align: center; }
-  /* line 70, scss/layout/_team.scss */
+  color: #fff; }
+  /* line 9, scss/component/_button.scss */
   .contact:hover {
     background: #FF2D49;
     color: #fff;
@@ -319,33 +335,19 @@ header {
     display: block;
     width: 210px;
     margin: auto;
-    margin-top: 125px;
     padding: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 125px;
     background: #fff;
-    color: #000;
-    text-align: center; }
-    /* line 54, scss/layout/_descride.scss */
+    color: #000; }
+    /* line 9, scss/component/_button.scss */
     .describe a:hover {
       background: #FF2D49;
       color: #fff;
       transition: .5s; }
 
 @media (min-width: 992px) {
-  /* line 64, scss/layout/_descride.scss */
+  /* line 54, scss/layout/_descride.scss */
   .switch {
-    opacity: 0; } }
-
-/* line 1, scss/layout/_footer.scss */
-footer {
-  padding: 30px 30px; }
-  /* line 3, scss/layout/_footer.scss */
-  footer div {
-    text-align: center; }
-    /* line 8, scss/layout/_footer.scss */
-    footer div a {
-      display: inline-block;
-      color: #FF2D49; }
-      /* line 14, scss/layout/_footer.scss */
-      footer div a:hover {
-        color: #FF2D49;
-        text-decoration: underline; }
+    display: none; } }

@@ -59,17 +59,8 @@
 }
 
 .contact {
-  flex: 0 0 215px;
-  @include area(10px, 0);
-  margin: auto;
+  @include button;
   margin-bottom: 45px;
   background-color: $black;
   color: $white;
-  text-align: center;
-  @extend %capitalize;
-  &:hover {
-    background: $red;
-    color: $white;
-    transition: .5s;
-  }
 }
