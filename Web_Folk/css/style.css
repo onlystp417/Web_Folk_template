@@ -48,42 +48,42 @@ header {
     header a:hover {
       color: #CF4976; }
 
-/* line 1, scss/layout/_banner.scss */
+/* line 1, scss/layout/_main-banner.scss */
 .banner {
   background: url(../images/banner.png) center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding-top: 15vh;
   padding-bottom: 15vh; }
-  /* line 7, scss/layout/_banner.scss */
+  /* line 7, scss/layout/_main-banner.scss */
   .banner h1 {
     font-style: italic;
     font-size: 3em; }
     @media (min-width: 992px) {
-      /* line 7, scss/layout/_banner.scss */
+      /* line 7, scss/layout/_main-banner.scss */
       .banner h1 {
         font-size: 3.8em; } }
-  /* line 21, scss/layout/_banner.scss */
+  /* line 21, scss/layout/_main-banner.scss */
   .banner h2 {
     font-size: 1em;
     letter-spacing: .3em;
     margin-bottom: 15vh; }
     @media (min-width: 992px) {
-      /* line 21, scss/layout/_banner.scss */
+      /* line 21, scss/layout/_main-banner.scss */
       .banner h2 {
         font-size: 1.5em; } }
-  /* line 31, scss/layout/_banner.scss */
+  /* line 31, scss/layout/_main-banner.scss */
   .banner p {
     width: 300px;
     margin: auto;
     margin-bottom: 5vh;
     line-height: 1.5; }
     @media (min-width: 992px) {
-      /* line 31, scss/layout/_banner.scss */
+      /* line 31, scss/layout/_main-banner.scss */
       .banner p {
         width: 400px;
         font-size: 1.25em; } }
-  /* line 45, scss/layout/_banner.scss */
+  /* line 45, scss/layout/_main-banner.scss */
   .banner > span {
     display: block;
     margin: auto;
@@ -93,13 +93,13 @@ header {
     border-radius: 50%;
     margin-bottom: 3vh; }
 
-/* line 1, scss/layout/_portfolio.scss */
+/* line 1, scss/layout/_main-portfolio.scss */
 .sample {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-  /* line 4, scss/layout/_portfolio.scss */
+  /* line 4, scss/layout/_main-portfolio.scss */
   .sample .label {
     display: block;
     position: absolute;
@@ -109,14 +109,14 @@ header {
     padding: 0 25%;
     z-index: 1; }
     @media (min-width: 576px) {
-      /* line 4, scss/layout/_portfolio.scss */
+      /* line 4, scss/layout/_main-portfolio.scss */
       .sample .label {
         padding: 0 30%; } }
     @media (min-width: 992px) {
-      /* line 4, scss/layout/_portfolio.scss */
+      /* line 4, scss/layout/_main-portfolio.scss */
       .sample .label {
         padding: 0 36%; } }
-    /* line 18, scss/layout/_portfolio.scss */
+    /* line 18, scss/layout/_main-portfolio.scss */
     .sample .label h2 {
       background: #FF2D49;
       color: #fff;
@@ -124,7 +124,7 @@ header {
       height: 50px;
       line-height: 50px;
       font-size: 1.2em; }
-    /* line 25, scss/layout/_portfolio.scss */
+    /* line 25, scss/layout/_main-portfolio.scss */
     .sample .label::after {
       content: "";
       display: block;
@@ -134,28 +134,28 @@ header {
       border-top: 15px solid #FF2D49;
       border-left: 15px solid transparent;
       border-right: 15px solid transparent; }
-  /* line 29, scss/layout/_portfolio.scss */
+  /* line 29, scss/layout/_main-portfolio.scss */
   .sample a + a {
     display: block;
     position: relative;
     flex: 0 0 100%; }
     @media (min-width: 576px) {
-      /* line 29, scss/layout/_portfolio.scss */
+      /* line 29, scss/layout/_main-portfolio.scss */
       .sample a + a {
         flex: 0 0 50%; } }
     @media (min-width: 768px) {
-      /* line 29, scss/layout/_portfolio.scss */
+      /* line 29, scss/layout/_main-portfolio.scss */
       .sample a + a {
         flex: 0 0 33.33%; } }
     @media (min-width: 992px) {
-      /* line 29, scss/layout/_portfolio.scss */
+      /* line 29, scss/layout/_main-portfolio.scss */
       .sample a + a {
         flex: 0 0 25%; } }
-    /* line 31, scss/layout/_portfolio.scss */
+    /* line 31, scss/layout/_main-portfolio.scss */
     .sample a + a img {
       width: 100%;
       vertical-align: middle; }
-    /* line 34, scss/layout/_portfolio.scss */
+    /* line 34, scss/layout/_main-portfolio.scss */
     .sample a + a div {
       position: absolute;
       top: 0;
@@ -165,49 +165,49 @@ header {
       background: #CF4976ee;
       text-align: center;
       opacity: 0; }
-      /* line 43, scss/layout/_portfolio.scss */
+      /* line 43, scss/layout/_main-portfolio.scss */
       .sample a + a div::before {
         content: "";
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-      /* line 49, scss/layout/_portfolio.scss */
+      /* line 49, scss/layout/_main-portfolio.scss */
       .sample a + a div:hover {
         opacity: 1;
         transition: .5s; }
-    /* line 54, scss/layout/_portfolio.scss */
+    /* line 54, scss/layout/_main-portfolio.scss */
     .sample a + a h3 {
       display: inline-block;
       color: #fff;
       font-size: 1.6em;
       vertical-align: middle; }
 
-/* line 1, scss/layout/_team.scss */
+/* line 1, scss/layout/_main-team.scss */
 .team {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-  /* line 3, scss/layout/_team.scss */
+  /* line 3, scss/layout/_main-team.scss */
   .team > h4 {
     flex: 0 0 100%;
     margin-bottom: 35px;
     font-size: 1.5em;
     color: #FF2D49;
     text-align: center; }
-  /* line 12, scss/layout/_team.scss */
+  /* line 12, scss/layout/_main-team.scss */
   .team .label {
     display: block;
     flex: 0 0 100%;
     order: -1;
     margin-bottom: 35px; }
-    /* line 17, scss/layout/_team.scss */
+    /* line 17, scss/layout/_main-team.scss */
     .team .label p {
       background: #FF2D49;
       color: #fff;
       text-align: center;
       padding: 20px 10px;
       font-size: 1.2em; }
-  /* line 23, scss/layout/_team.scss */
+  /* line 23, scss/layout/_main-team.scss */
   .team .label::after {
     content: "";
     display: block;
@@ -218,50 +218,50 @@ header {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent; }
 
-/* line 31, scss/layout/_team.scss */
+/* line 31, scss/layout/_main-team.scss */
 .member {
   flex: 0 0 100%;
   padding: 0 18%; }
-  /* line 34, scss/layout/_team.scss */
+  /* line 34, scss/layout/_main-team.scss */
   .member > div {
     display: block;
     position: relative;
     flex: 0 0 100%;
     margin-bottom: 40px; }
     @media (min-width: 576px) {
-      /* line 34, scss/layout/_team.scss */
+      /* line 34, scss/layout/_main-team.scss */
       .member > div {
         flex: 0 0 100%; } }
     @media (min-width: 768px) {
-      /* line 34, scss/layout/_team.scss */
+      /* line 34, scss/layout/_main-team.scss */
       .member > div {
         flex: 0 0 50%; } }
     @media (min-width: 992px) {
-      /* line 34, scss/layout/_team.scss */
+      /* line 34, scss/layout/_main-team.scss */
       .member > div {
         flex: 0 0 50%; } }
-    /* line 37, scss/layout/_team.scss */
+    /* line 37, scss/layout/_main-team.scss */
     .member > div img {
       width: 100%;
       vertical-align: middle;
       margin-bottom: 20px; }
-    /* line 41, scss/layout/_team.scss */
+    /* line 41, scss/layout/_main-team.scss */
     .member > div h2 {
       color: #FF2D49;
       font-size: 2.5em;
       text-align: center; }
-    /* line 48, scss/layout/_team.scss */
+    /* line 48, scss/layout/_main-team.scss */
     .member > div h3 {
       font-size: 1.1em;
       text-align: center; }
 
-/* line 57, scss/layout/_team.scss */
+/* line 57, scss/layout/_main-team.scss */
 .flexbox {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
 
-/* line 61, scss/layout/_team.scss */
+/* line 61, scss/layout/_main-team.scss */
 .contact {
   display: block;
   width: 210px;
@@ -277,35 +277,35 @@ header {
     color: #fff;
     transition: .5s; }
 
-/* line 1, scss/layout/_descride.scss */
+/* line 1, scss/layout/_main-descride.scss */
 .describe {
   background: url("../images/sea-horse-bg.jpg") center/cover no-repeat fixed;
   padding: 80px 8% 30px 8%;
   color: #fff; }
   @media (min-width: 992px) {
-    /* line 1, scss/layout/_descride.scss */
+    /* line 1, scss/layout/_main-descride.scss */
     .describe {
       background-size: 200%; } }
   @media (min-width: 992px) {
-    /* line 8, scss/layout/_descride.scss */
+    /* line 8, scss/layout/_main-descride.scss */
     .describe article {
       column-count: 2;
       column-gap: 9em; } }
-  /* line 13, scss/layout/_descride.scss */
+  /* line 13, scss/layout/_main-descride.scss */
   .describe article h4 {
     font-size: 1.8em;
     margin-bottom: 15px; }
-  /* line 19, scss/layout/_descride.scss */
+  /* line 19, scss/layout/_main-descride.scss */
   .describe article p {
     margin-bottom: 15px;
     font-size: .9em;
     font-weight: 400; }
-  /* line 24, scss/layout/_descride.scss */
+  /* line 24, scss/layout/_main-descride.scss */
   .describe article .devider {
     text-align: center;
     margin-top: 125px;
     margin-bottom: 65px; }
-    /* line 28, scss/layout/_descride.scss */
+    /* line 28, scss/layout/_main-descride.scss */
     .describe article .devider span {
       display: inline-block;
       width: 8px;
@@ -314,12 +314,12 @@ header {
       border-radius: 50%;
       margin: 0 8px; }
   @media (min-width: 992px) {
-    /* line 33, scss/layout/_descride.scss */
+    /* line 33, scss/layout/_main-descride.scss */
     .describe article .gutter::before {
       content: "";
       display: block;
       height: 260px; } }
-  /* line 41, scss/layout/_descride.scss */
+  /* line 41, scss/layout/_main-descride.scss */
   .describe a {
     display: block;
     width: 210px;
@@ -337,7 +337,7 @@ header {
       transition: .5s; }
 
 @media (min-width: 992px) {
-  /* line 50, scss/layout/_descride.scss */
+  /* line 50, scss/layout/_main-descride.scss */
   .switch {
     display: none; } }
 
