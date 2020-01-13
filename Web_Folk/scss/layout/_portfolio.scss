@@ -27,7 +27,7 @@
     }
   }
   a + a {
-    @include card;
+    @include card(50%, 33.33%, 25%);
     img {
       @include card-img;
     }

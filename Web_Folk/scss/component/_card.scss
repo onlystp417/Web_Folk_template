@@ -1,15 +1,25 @@
-@mixin card {
+@mixin flexbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+//$phone: 手機螢幕尺寸（576px以上）
+//$pad: 平板螢幕尺寸（768px以上）
+//$pc: 電腦螢幕尺寸（992px以上）
+
+@mixin card($phone, $pad, $pc) {
   display: block;
   position: relative;
   flex: 0 0 100%;
   @media (min-width: 576px) {
-    flex: 0 0 50%;
+    flex: 0 0 $phone;
   }
   @media (min-width: 768px) {
-    flex: 0 0 33.33333%
+    flex: 0 0 $pad;
   }
   @media (min-width: 992px) {
-    flex: 0 0 25%
+    flex: 0 0 $pc;
   }
 }
 

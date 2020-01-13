@@ -33,7 +33,7 @@
   @include flexbox;
   @include area(0, 18%);
   > div {
-    flex: 0 0 100%;
+    @include card(100%, 50%, 50%)
     margin-bottom: 40px;
     img {
       @include card-img;
@@ -51,9 +51,6 @@
       @extend %lato;
       font-size: 1.1em;
       text-align: center;
-    }
-    @media (min-width: 768px) {
-      flex: 0 0 50%;
     }
   }
 }

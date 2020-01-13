@@ -95,8 +95,8 @@ header {
 /* line 1, scss/layout/_portfolio.scss */
 .sample {
   position: relative;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap; }
   /* line 4, scss/layout/_portfolio.scss */
   .sample .label {
@@ -145,7 +145,7 @@ header {
     @media (min-width: 768px) {
       /* line 29, scss/layout/_portfolio.scss */
       .sample a + a {
-        flex: 0 0 33.33333%; } }
+        flex: 0 0 33.33%; } }
     @media (min-width: 992px) {
       /* line 29, scss/layout/_portfolio.scss */
       .sample a + a {
@@ -183,8 +183,8 @@ header {
 
 /* line 1, scss/layout/_team.scss */
 .team {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap; }
   /* line 3, scss/layout/_team.scss */
   .team > h4 {
@@ -220,14 +220,28 @@ header {
 /* line 31, scss/layout/_team.scss */
 .member {
   flex: 0 0 100%;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 18%; }
   /* line 35, scss/layout/_team.scss */
   .member > div {
+    display: block;
+    position: relative;
     flex: 0 0 100%;
     margin-bottom: 40px; }
+    @media (min-width: 576px) {
+      /* line 35, scss/layout/_team.scss */
+      .member > div {
+        flex: 0 0 100%; } }
+    @media (min-width: 768px) {
+      /* line 35, scss/layout/_team.scss */
+      .member > div {
+        flex: 0 0 50%; } }
+    @media (min-width: 992px) {
+      /* line 35, scss/layout/_team.scss */
+      .member > div {
+        flex: 0 0 50%; } }
     /* line 38, scss/layout/_team.scss */
     .member > div img {
       width: 100%;
@@ -242,12 +256,8 @@ header {
     .member > div h3 {
       font-size: 1.1em;
       text-align: center; }
-    @media (min-width: 768px) {
-      /* line 35, scss/layout/_team.scss */
-      .member > div {
-        flex: 0 0 50%; } }
 
-/* line 61, scss/layout/_team.scss */
+/* line 58, scss/layout/_team.scss */
 .contact {
   display: block;
   width: 210px;
