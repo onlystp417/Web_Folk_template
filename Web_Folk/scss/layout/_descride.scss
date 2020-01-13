@@ -1,9 +1,14 @@
 .describe {
   background: url('../images/sea-horse-bg.jpg') center/cover no-repeat fixed;
-  @include area(0, 15%);
+  @include area(0, 8%);
   padding-top: 80px;
   padding-bottom: 30px;
   color: $white;
+  @media (min-width: 576px) {
+    @include area(0, 18%);
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
   @media (min-width: 992px) {
     background-size: 200%;
   }
