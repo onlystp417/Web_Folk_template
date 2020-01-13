@@ -38,12 +38,13 @@ header {
   text-align: center; }
   /* line 4, scss/layout/_header.scss */
   header nav {
-    padding: 20px 0; }
+    padding: 10px 0; }
   /* line 7, scss/layout/_header.scss */
   header a {
-    color: #fff;
-    padding: 0 10px; }
-    /* line 11, scss/layout/_header.scss */
+    display: inline-block;
+    padding: 10px;
+    color: #fff; }
+    /* line 12, scss/layout/_header.scss */
     header a:hover {
       color: #CF4976; }
 
@@ -342,7 +343,7 @@ header {
 
 /* line 1, scss/layout/_footer.scss */
 footer {
-  padding: 30px 30px;
+  padding: 30px;
   background: #E5E4E4;
   text-align: center;
   text-align: center; }

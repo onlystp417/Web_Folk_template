@@ -16,7 +16,7 @@
     margin-bottom: 35px;
     p {
       @include label;
-      @include area(20px, 10px);
+      padding: 20px 10px;
       font-size: 1.2em;
     }
   }

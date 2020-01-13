@@ -27,7 +27,7 @@
       margin-bottom: 65px;
       span {
         @include horizontal-dot;
-        @include apart(0, 8px);
+        margin: 0 8px;
       }
     }
     .gutter::before {
