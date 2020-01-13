@@ -279,40 +279,32 @@ header {
 /* line 1, scss/layout/_descride.scss */
 .describe {
   background: url("../images/sea-horse-bg.jpg") center/cover no-repeat fixed;
-  padding: 0 8%;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding: 80px 8% 30px 8%;
   color: #fff; }
-  @media (min-width: 576px) {
-    /* line 1, scss/layout/_descride.scss */
-    .describe {
-      padding: 0 18%;
-      padding-top: 80px;
-      padding-bottom: 30px; } }
   @media (min-width: 992px) {
     /* line 1, scss/layout/_descride.scss */
     .describe {
       background-size: 200%; } }
   @media (min-width: 992px) {
-    /* line 15, scss/layout/_descride.scss */
+    /* line 8, scss/layout/_descride.scss */
     .describe article {
       column-count: 2;
       column-gap: 9em; } }
-  /* line 20, scss/layout/_descride.scss */
+  /* line 13, scss/layout/_descride.scss */
   .describe article h4 {
     font-size: 1.8em;
     margin-bottom: 15px; }
-  /* line 26, scss/layout/_descride.scss */
+  /* line 19, scss/layout/_descride.scss */
   .describe article p {
     margin-bottom: 15px;
     font-size: .9em;
     font-weight: 400; }
-  /* line 31, scss/layout/_descride.scss */
+  /* line 24, scss/layout/_descride.scss */
   .describe article .devider {
     text-align: center;
     margin-top: 125px;
     margin-bottom: 65px; }
-    /* line 35, scss/layout/_descride.scss */
+    /* line 28, scss/layout/_descride.scss */
     .describe article .devider span {
       display: inline-block;
       width: 8px;
@@ -321,12 +313,12 @@ header {
       border-radius: 50%;
       margin: 0 8px; }
   @media (min-width: 992px) {
-    /* line 40, scss/layout/_descride.scss */
+    /* line 33, scss/layout/_descride.scss */
     .describe article .gutter::before {
       content: "";
       display: block;
       height: 260px; } }
-  /* line 48, scss/layout/_descride.scss */
+  /* line 41, scss/layout/_descride.scss */
   .describe a {
     display: block;
     width: 210px;
@@ -344,7 +336,7 @@ header {
       transition: .5s; }
 
 @media (min-width: 992px) {
-  /* line 57, scss/layout/_descride.scss */
+  /* line 50, scss/layout/_descride.scss */
   .switch {
     display: none; } }
 
