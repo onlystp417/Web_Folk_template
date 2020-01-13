@@ -1,21 +1,20 @@
 footer {
   @include area(30px, 30px);
   background: $gray;
-  div {
-    text-align: center;
-    span {
-      @extend %capitalize;
+  text-align: center;
+  text-align: center;
+  span {
+    @extend %capitalize;
+  }
+  a {
+    display: inline-block;
+    color: $red;
+    &::first-letter {
+      @extend %uppercase;
     }
-    a {
-      display: inline-block;
-      color: $red;
-      &::first-letter {
-        @extend %uppercase;
-      }
-      &:hover {
-        color: $red; 
-        text-decoration: underline;
-      }
+    &:hover {
+      color: $red; 
+      text-decoration: underline;
     }
   }
 }
