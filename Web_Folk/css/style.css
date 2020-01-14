@@ -36,45 +36,46 @@ header {
   text-align: center;
   padding-top: 15vh;
   padding-bottom: 15vh; }
-  /* line 7, scss/layout/_main-banner.scss */
-  .banner h1 {
-    font-size: 3em; }
-    @media (min-width: 992px) {
-      /* line 7, scss/layout/_main-banner.scss */
-      .banner h1 {
-        font-size: 3.8em; } }
-  /* line 13, scss/layout/_main-banner.scss */
+  /* line 8, scss/layout/_main-banner.scss */
   .banner h1 span:first-child {
     text-transform: uppercase;
-    font: italic normal "Libre Baskerville", "Arial", "Sans-serif"; }
-  /* line 17, scss/layout/_main-banner.scss */
+    font: italic 48px "Libre Baskerville", "Arial", "Sans-serif"; }
+    @media (min-width: 992px) {
+      /* line 8, scss/layout/_main-banner.scss */
+      .banner h1 span:first-child {
+        font-size: 60px; } }
+  /* line 15, scss/layout/_main-banner.scss */
   .banner h1 span:last-child {
-    font: italic normal "Lobster", "Arial", "Sans-serif"; }
-  /* line 20, scss/layout/_main-banner.scss */
+    font: italic 48px "Lobster", "Arial", "Sans-serif"; }
+    @media (min-width: 992px) {
+      /* line 15, scss/layout/_main-banner.scss */
+      .banner h1 span:last-child {
+        font-size: 60px; } }
+  /* line 22, scss/layout/_main-banner.scss */
   .banner h2 {
     text-transform: capitalize;
     font: normal 1em "Libre Baskerville", "Arial", "Sans-serif";
     letter-spacing: .3em;
     margin-bottom: 15vh; }
     @media (min-width: 992px) {
-      /* line 20, scss/layout/_main-banner.scss */
+      /* line 22, scss/layout/_main-banner.scss */
       .banner h2 {
         font-size: 1.5em; } }
-  /* line 29, scss/layout/_main-banner.scss */
+  /* line 31, scss/layout/_main-banner.scss */
   .banner p {
     width: 300px;
     margin: auto;
     margin-bottom: 5vh;
     font: normal 1em/1.5 "Libre Baskerville", "Arial", "Sans-serif"; }
     @media (min-width: 992px) {
-      /* line 29, scss/layout/_main-banner.scss */
+      /* line 31, scss/layout/_main-banner.scss */
       .banner p {
         width: 400px;
         font-size: 1.25em; } }
-  /* line 39, scss/layout/_main-banner.scss */
+  /* line 41, scss/layout/_main-banner.scss */
   .banner p:first-letter {
     text-transform: uppercase; }
-  /* line 42, scss/layout/_main-banner.scss */
+  /* line 44, scss/layout/_main-banner.scss */
   .banner > span {
     display: block;
     margin: auto;
@@ -85,13 +86,13 @@ header {
     margin-bottom: 3vh; }
 
 /* line 1, scss/layout/_main-portfolio.scss */
-.sample {
+.portfolio {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
   /* line 4, scss/layout/_main-portfolio.scss */
-  .sample .label {
+  .portfolio .label {
     display: block;
     position: absolute;
     top: -50px;
@@ -101,23 +102,22 @@ header {
     z-index: 1; }
     @media (min-width: 576px) {
       /* line 4, scss/layout/_main-portfolio.scss */
-      .sample .label {
+      .portfolio .label {
         padding: 0 30%; } }
     @media (min-width: 992px) {
       /* line 4, scss/layout/_main-portfolio.scss */
-      .sample .label {
+      .portfolio .label {
         padding: 0 36%; } }
     /* line 18, scss/layout/_main-portfolio.scss */
-    .sample .label h2 {
+    .portfolio .label h2 {
+      height: 50px;
       text-transform: capitalize;
       background: #FF2D49;
       color: #fff;
-      font: normal "Lato", "Arial", "Sans-serif";
       text-align: center;
-      height: 50px;
-      font: 1.2em/50px; }
+      font: normal 1.2em/50px "Lato", "Arial", "Sans-serif"; }
     /* line 24, scss/layout/_main-portfolio.scss */
-    .sample .label::after {
+    .portfolio .label::after {
       content: "";
       display: block;
       margin: auto;
@@ -127,28 +127,28 @@ header {
       border-left: 15px solid transparent;
       border-right: 15px solid transparent; }
   /* line 28, scss/layout/_main-portfolio.scss */
-  .sample a + a {
+  .portfolio a + a {
     display: block;
     position: relative;
     flex: 0 0 100%; }
     @media (min-width: 576px) {
       /* line 28, scss/layout/_main-portfolio.scss */
-      .sample a + a {
+      .portfolio a + a {
         flex: 0 0 50%; } }
     @media (min-width: 768px) {
       /* line 28, scss/layout/_main-portfolio.scss */
-      .sample a + a {
+      .portfolio a + a {
         flex: 0 0 33.33%; } }
     @media (min-width: 992px) {
       /* line 28, scss/layout/_main-portfolio.scss */
-      .sample a + a {
+      .portfolio a + a {
         flex: 0 0 25%; } }
     /* line 30, scss/layout/_main-portfolio.scss */
-    .sample a + a img {
+    .portfolio a + a img {
       width: 100%;
       vertical-align: middle; }
     /* line 33, scss/layout/_main-portfolio.scss */
-    .sample a + a div {
+    .portfolio a + a div {
       position: absolute;
       top: 0;
       left: 0;
@@ -158,23 +158,23 @@ header {
       text-align: center;
       opacity: 0; }
       /* line 42, scss/layout/_main-portfolio.scss */
-      .sample a + a div::before {
+      .portfolio a + a div::before {
         content: "";
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
       /* line 48, scss/layout/_main-portfolio.scss */
-      .sample a + a div:hover {
+      .portfolio a + a div:hover {
         opacity: 1;
         transition: .5s; }
     /* line 53, scss/layout/_main-portfolio.scss */
-    .sample a + a h3 {
+    .portfolio a + a h3 {
       display: inline-block;
       font: normal 1.6em "Libre Baskerville", "Arial", "Sans-serif";
       color: #fff;
       vertical-align: middle; }
     /* line 59, scss/layout/_main-portfolio.scss */
-    .sample a + a h3::first-letter {
+    .portfolio a + a h3::first-letter {
       text-transform: uppercase; }
 
 /* line 1, scss/layout/_main-team.scss */
@@ -206,7 +206,6 @@ header {
     .team .label p {
       background: #FF2D49;
       color: #fff;
-      font: normal "Lato", "Arial", "Sans-serif";
       text-align: center;
       padding: 20px 10px;
       font-size: 1.2em; }
