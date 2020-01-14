@@ -11,15 +11,13 @@
       column-gap: 9em;
     }
     h4 {
-      @extend %libre;
-      @extend %capitalize;
-      font-size: 1.8em;
+      font: normal 1.8em $libre;
+      text-transform: capitalize;
       margin-bottom: 15px;
     }
     p {
       margin-bottom: 15px;
-      font-size: .9em;
-      font-weight: 400;
+      font: 400 .9em $lato;
     }
     .devider {
       text-align: center;

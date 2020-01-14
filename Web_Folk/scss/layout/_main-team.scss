@@ -1,11 +1,14 @@
+.flexbox {
+  @include flexbox;
+}
+
 .team {
   @include flexbox;
   > h4 {
     flex: 0 0 100%;
     margin-bottom: 35px;
-    @extend %capitalize;
-    @extend %libre;
-    font-size: 1.5em;
+    text-transform: capitalize;
+    font: normal 1.5em $libre;
     color: $red;
     text-align: center;
   }
@@ -24,7 +27,7 @@
     @include arrow;
   }
   .label::first-letter {
-    @extend %capitalize;
+    text-transform: capitalize;
   }
 }
 
@@ -39,23 +42,17 @@
       margin-bottom: 20px;
     }
     h2 {
-      @extend %capitalize;
-      @extend %libre;
+      text-transform: capitalize;
+      font: normal 2.5em $libre;
       color: $red;
-      font-size: 2.5em;
       text-align: center;
     }
     h3 {
-      @extend %capitalize;
-      @extend %lato;
-      font-size: 1.1em;
+      text-transform: capitalize;
+      font: normal 1.1em $lato;
       text-align: center;
     }
   }
-}
-
-.flexbox {
-  @include flexbox;
 }
 
 .contact {

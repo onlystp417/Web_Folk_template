@@ -5,23 +5,21 @@
   padding-top: 15vh;
   padding-bottom: 15vh;
   h1 {
-    font-style: italic;
     font-size: 3em;
     @media (min-width: 992px) {
       font-size: 3.8em;
     }
   }
   h1 span:first-child {
-    @extend %uppercase;
-    @extend %libre;
+    text-transform: uppercase;
+    font: italic normal $libre;
   }
   h1 span:last-child {
-    @extend %lobster;
+    font: italic normal $lobster;
   }
   h2 {
-    @extend %capitalize;
-    @extend %libre;
-    font-size: 1em;
+    text-transform: capitalize;
+    font: normal 1em $libre;
     letter-spacing: .3em;
     margin-bottom: 15vh;
     @media (min-width: 992px) {
@@ -32,15 +30,14 @@
     width: 300px;
     margin: auto;
     margin-bottom: 5vh;
-    @extend %libre;
-    line-height: 1.5;
+    font: normal 1em/1.5 $libre;
     @media (min-width: 992px) {
       width: 400px;
       font-size: 1.25em;
     }
   }
   p:first-letter {
-    @extend %uppercase;
+    text-transform: uppercase;
   }
   > span {
     @include vertical-dot;

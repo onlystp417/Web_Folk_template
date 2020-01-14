@@ -4,13 +4,13 @@ footer {
   text-align: center;
   text-align: center;
   span {
-    @extend %capitalize;
+    text-transform: capitalize;
   }
   a {
     display: inline-block;
     color: $red;
     &::first-letter {
-      @extend %uppercase;
+      text-transform: uppercase;
     }
     &:hover {
       color: $red; 

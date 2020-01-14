@@ -1,7 +1,7 @@
 @mixin label {
   background: $red;
   color: $white;
-  @extend %lato;
+  font: normal $lato;
   text-align: center;
 }
 

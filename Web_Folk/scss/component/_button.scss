@@ -4,8 +4,8 @@
   margin: auto;
   padding: 10px 0;
   text-align: center;
-  @extend %uppercase;
-  @extend %lato;
+  font: normal $lato;
+  text-transform: uppercase;
   &:hover {
     background: $red;
     color: $white;

@@ -12,26 +12,6 @@ a, a:hover {
   text-decoration: none;
   color: inherit; }
 
-/* line 3, scss/global/_typography.scss */
-.banner h1 span:first-child, .banner h2, .banner p, .sample a + a h3, .team > h4, .member > div h2, .describe article h4 {
-  font-family: 'Libre Baskerville'; }
-
-/* line 7, scss/global/_typography.scss */
-.sample .label h2, .team .label p, .member > div h3, .contact, .describe a {
-  font-family: 'Lato'; }
-
-/* line 11, scss/global/_typography.scss */
-.banner h1 span:last-child {
-  font-family: 'Lobster'; }
-
-/* line 15, scss/global/_typography.scss */
-header a, .banner h2, .sample .label h2, .team > h4, .team .label::first-letter, .member > div h2, .member > div h3, .describe article h4, footer span {
-  text-transform: capitalize; }
-
-/* line 19, scss/global/_typography.scss */
-.banner h1 span:first-child, .banner p:first-letter, .sample a + a h3::first-letter, .contact, .describe a, footer a::first-letter {
-  text-transform: uppercase; }
-
 /* line 1, scss/layout/_header.scss */
 header {
   background-color: #370835;
@@ -43,7 +23,8 @@ header {
   header a {
     display: inline-block;
     padding: 10px;
-    color: #fff; }
+    color: #fff;
+    text-transform: capitalize; }
     /* line 12, scss/layout/_header.scss */
     header a:hover {
       color: #CF4976; }
@@ -57,33 +38,43 @@ header {
   padding-bottom: 15vh; }
   /* line 7, scss/layout/_main-banner.scss */
   .banner h1 {
-    font-style: italic;
     font-size: 3em; }
     @media (min-width: 992px) {
       /* line 7, scss/layout/_main-banner.scss */
       .banner h1 {
         font-size: 3.8em; } }
-  /* line 21, scss/layout/_main-banner.scss */
+  /* line 13, scss/layout/_main-banner.scss */
+  .banner h1 span:first-child {
+    text-transform: uppercase;
+    font: italic normal "Libre Baskerville", "Arial", "Sans-serif"; }
+  /* line 17, scss/layout/_main-banner.scss */
+  .banner h1 span:last-child {
+    font: italic normal "Lobster", "Arial", "Sans-serif"; }
+  /* line 20, scss/layout/_main-banner.scss */
   .banner h2 {
-    font-size: 1em;
+    text-transform: capitalize;
+    font: normal 1em "Libre Baskerville", "Arial", "Sans-serif";
     letter-spacing: .3em;
     margin-bottom: 15vh; }
     @media (min-width: 992px) {
-      /* line 21, scss/layout/_main-banner.scss */
+      /* line 20, scss/layout/_main-banner.scss */
       .banner h2 {
         font-size: 1.5em; } }
-  /* line 31, scss/layout/_main-banner.scss */
+  /* line 29, scss/layout/_main-banner.scss */
   .banner p {
     width: 300px;
     margin: auto;
     margin-bottom: 5vh;
-    line-height: 1.5; }
+    font: normal 1em/1.5 "Libre Baskerville", "Arial", "Sans-serif"; }
     @media (min-width: 992px) {
-      /* line 31, scss/layout/_main-banner.scss */
+      /* line 29, scss/layout/_main-banner.scss */
       .banner p {
         width: 400px;
         font-size: 1.25em; } }
-  /* line 45, scss/layout/_main-banner.scss */
+  /* line 39, scss/layout/_main-banner.scss */
+  .banner p:first-letter {
+    text-transform: uppercase; }
+  /* line 42, scss/layout/_main-banner.scss */
   .banner > span {
     display: block;
     margin: auto;
@@ -118,13 +109,14 @@ header {
         padding: 0 36%; } }
     /* line 18, scss/layout/_main-portfolio.scss */
     .sample .label h2 {
+      text-transform: capitalize;
       background: #FF2D49;
       color: #fff;
+      font: normal "Lato", "Arial", "Sans-serif";
       text-align: center;
       height: 50px;
-      line-height: 50px;
-      font-size: 1.2em; }
-    /* line 25, scss/layout/_main-portfolio.scss */
+      font: 1.2em/50px; }
+    /* line 24, scss/layout/_main-portfolio.scss */
     .sample .label::after {
       content: "";
       display: block;
@@ -134,28 +126,28 @@ header {
       border-top: 15px solid #FF2D49;
       border-left: 15px solid transparent;
       border-right: 15px solid transparent; }
-  /* line 29, scss/layout/_main-portfolio.scss */
+  /* line 28, scss/layout/_main-portfolio.scss */
   .sample a + a {
     display: block;
     position: relative;
     flex: 0 0 100%; }
     @media (min-width: 576px) {
-      /* line 29, scss/layout/_main-portfolio.scss */
+      /* line 28, scss/layout/_main-portfolio.scss */
       .sample a + a {
         flex: 0 0 50%; } }
     @media (min-width: 768px) {
-      /* line 29, scss/layout/_main-portfolio.scss */
+      /* line 28, scss/layout/_main-portfolio.scss */
       .sample a + a {
         flex: 0 0 33.33%; } }
     @media (min-width: 992px) {
-      /* line 29, scss/layout/_main-portfolio.scss */
+      /* line 28, scss/layout/_main-portfolio.scss */
       .sample a + a {
         flex: 0 0 25%; } }
-    /* line 31, scss/layout/_main-portfolio.scss */
+    /* line 30, scss/layout/_main-portfolio.scss */
     .sample a + a img {
       width: 100%;
       vertical-align: middle; }
-    /* line 34, scss/layout/_main-portfolio.scss */
+    /* line 33, scss/layout/_main-portfolio.scss */
     .sample a + a div {
       position: absolute;
       top: 0;
@@ -165,49 +157,60 @@ header {
       background: #CF4976ee;
       text-align: center;
       opacity: 0; }
-      /* line 43, scss/layout/_main-portfolio.scss */
+      /* line 42, scss/layout/_main-portfolio.scss */
       .sample a + a div::before {
         content: "";
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-      /* line 49, scss/layout/_main-portfolio.scss */
+      /* line 48, scss/layout/_main-portfolio.scss */
       .sample a + a div:hover {
         opacity: 1;
         transition: .5s; }
-    /* line 54, scss/layout/_main-portfolio.scss */
+    /* line 53, scss/layout/_main-portfolio.scss */
     .sample a + a h3 {
       display: inline-block;
+      font: normal 1.6em "Libre Baskerville", "Arial", "Sans-serif";
       color: #fff;
-      font-size: 1.6em;
       vertical-align: middle; }
+    /* line 59, scss/layout/_main-portfolio.scss */
+    .sample a + a h3::first-letter {
+      text-transform: uppercase; }
 
 /* line 1, scss/layout/_main-team.scss */
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+/* line 5, scss/layout/_main-team.scss */
 .team {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-  /* line 3, scss/layout/_main-team.scss */
+  /* line 7, scss/layout/_main-team.scss */
   .team > h4 {
     flex: 0 0 100%;
     margin-bottom: 35px;
-    font-size: 1.5em;
+    text-transform: capitalize;
+    font: normal 1.5em "Libre Baskerville", "Arial", "Sans-serif";
     color: #FF2D49;
     text-align: center; }
-  /* line 12, scss/layout/_main-team.scss */
+  /* line 15, scss/layout/_main-team.scss */
   .team .label {
     display: block;
     flex: 0 0 100%;
     order: -1;
     margin-bottom: 35px; }
-    /* line 17, scss/layout/_main-team.scss */
+    /* line 20, scss/layout/_main-team.scss */
     .team .label p {
       background: #FF2D49;
       color: #fff;
+      font: normal "Lato", "Arial", "Sans-serif";
       text-align: center;
       padding: 20px 10px;
       font-size: 1.2em; }
-  /* line 23, scss/layout/_main-team.scss */
+  /* line 26, scss/layout/_main-team.scss */
   .team .label::after {
     content: "";
     display: block;
@@ -217,57 +220,58 @@ header {
     border-top: 15px solid #FF2D49;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent; }
+  /* line 29, scss/layout/_main-team.scss */
+  .team .label::first-letter {
+    text-transform: capitalize; }
 
-/* line 31, scss/layout/_main-team.scss */
+/* line 34, scss/layout/_main-team.scss */
 .member {
   flex: 0 0 100%;
   padding: 0 18%; }
-  /* line 34, scss/layout/_main-team.scss */
+  /* line 37, scss/layout/_main-team.scss */
   .member > div {
     display: block;
     position: relative;
     flex: 0 0 100%;
     margin-bottom: 40px; }
     @media (min-width: 576px) {
-      /* line 34, scss/layout/_main-team.scss */
+      /* line 37, scss/layout/_main-team.scss */
       .member > div {
         flex: 0 0 100%; } }
     @media (min-width: 768px) {
-      /* line 34, scss/layout/_main-team.scss */
+      /* line 37, scss/layout/_main-team.scss */
       .member > div {
         flex: 0 0 50%; } }
     @media (min-width: 992px) {
-      /* line 34, scss/layout/_main-team.scss */
+      /* line 37, scss/layout/_main-team.scss */
       .member > div {
         flex: 0 0 50%; } }
-    /* line 37, scss/layout/_main-team.scss */
+    /* line 40, scss/layout/_main-team.scss */
     .member > div img {
       width: 100%;
       vertical-align: middle;
       margin-bottom: 20px; }
-    /* line 41, scss/layout/_main-team.scss */
+    /* line 44, scss/layout/_main-team.scss */
     .member > div h2 {
+      text-transform: capitalize;
+      font: normal 2.5em "Libre Baskerville", "Arial", "Sans-serif";
       color: #FF2D49;
-      font-size: 2.5em;
       text-align: center; }
-    /* line 48, scss/layout/_main-team.scss */
+    /* line 50, scss/layout/_main-team.scss */
     .member > div h3 {
-      font-size: 1.1em;
+      text-transform: capitalize;
+      font: normal 1.1em "Lato", "Arial", "Sans-serif";
       text-align: center; }
 
-/* line 57, scss/layout/_main-team.scss */
-.flexbox {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-
-/* line 61, scss/layout/_main-team.scss */
+/* line 58, scss/layout/_main-team.scss */
 .contact {
   display: block;
   width: 210px;
   margin: auto;
   padding: 10px 0;
   text-align: center;
+  font: normal "Lato", "Arial", "Sans-serif";
+  text-transform: uppercase;
   margin-bottom: 45px;
   background-color: #000;
   color: #fff; }
@@ -293,19 +297,19 @@ header {
       column-gap: 9em; } }
   /* line 13, scss/layout/_main-descride.scss */
   .describe article h4 {
-    font-size: 1.8em;
+    font: normal 1.8em "Libre Baskerville", "Arial", "Sans-serif";
+    text-transform: capitalize;
     margin-bottom: 15px; }
-  /* line 19, scss/layout/_main-descride.scss */
+  /* line 18, scss/layout/_main-descride.scss */
   .describe article p {
     margin-bottom: 15px;
-    font-size: .9em;
-    font-weight: 400; }
-  /* line 24, scss/layout/_main-descride.scss */
+    font: 400 0.9em "Lato", "Arial", "Sans-serif"; }
+  /* line 22, scss/layout/_main-descride.scss */
   .describe article .devider {
     text-align: center;
     margin-top: 125px;
     margin-bottom: 65px; }
-    /* line 28, scss/layout/_main-descride.scss */
+    /* line 26, scss/layout/_main-descride.scss */
     .describe article .devider span {
       display: inline-block;
       width: 8px;
@@ -314,18 +318,20 @@ header {
       border-radius: 50%;
       margin: 0 8px; }
   @media (min-width: 992px) {
-    /* line 33, scss/layout/_main-descride.scss */
+    /* line 31, scss/layout/_main-descride.scss */
     .describe article .gutter::before {
       content: "";
       display: block;
       height: 260px; } }
-  /* line 41, scss/layout/_main-descride.scss */
+  /* line 39, scss/layout/_main-descride.scss */
   .describe a {
     display: block;
     width: 210px;
     margin: auto;
     padding: 10px 0;
     text-align: center;
+    font: normal "Lato", "Arial", "Sans-serif";
+    text-transform: uppercase;
     padding: 10px 0;
     margin-top: 125px;
     background: #fff;
@@ -337,7 +343,7 @@ header {
       transition: .5s; }
 
 @media (min-width: 992px) {
-  /* line 50, scss/layout/_main-descride.scss */
+  /* line 48, scss/layout/_main-descride.scss */
   .switch {
     display: none; } }
 
@@ -347,10 +353,16 @@ footer {
   background: #E5E4E4;
   text-align: center;
   text-align: center; }
+  /* line 6, scss/layout/_footer.scss */
+  footer span {
+    text-transform: capitalize; }
   /* line 9, scss/layout/_footer.scss */
   footer a {
     display: inline-block;
     color: #FF2D49; }
+    /* line 12, scss/layout/_footer.scss */
+    footer a::first-letter {
+      text-transform: uppercase; }
     /* line 15, scss/layout/_footer.scss */
     footer a:hover {
       color: #FF2D49;

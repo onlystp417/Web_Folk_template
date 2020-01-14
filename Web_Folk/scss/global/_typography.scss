@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap');
 
-%libre {
-  font-family: 'Libre Baskerville';
-}
+$libre: 'Libre Baskerville', 'Arial', 'Sans-serif';
 
-%lato {
-  font-family: 'Lato';
-}
+$lato: 'Lato', 'Arial', 'Sans-serif';
 
-%lobster {
-  font-family: 'Lobster';
-}
-
-%capitalize {
-  text-transform: capitalize;
-}
-
-%uppercase {
-  text-transform: uppercase;
-}
+$lobster: 'Lobster', 'Arial', 'Sans-serif';
