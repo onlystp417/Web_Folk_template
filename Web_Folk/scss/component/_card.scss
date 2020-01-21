@@ -2,22 +2,25 @@
 //$pad: 平板螢幕尺寸（768px以上）
 //$pc: 電腦螢幕尺寸（992px以上）
 
-@mixin card($phone, $pad, $pc) {
+.card {
   display: block;
   position: relative;
-  flex: 0 0 100%;
-  @media (min-width: 576px) {
-    flex: 0 0 $phone;
-  }
-  @media (min-width: 768px) {
-    flex: 0 0 $pad;
-  }
-  @media (min-width: 992px) {
-    flex: 0 0 $pc;
+  @include card-width_mediaquery(100%, 100%, 50%);
+  img {
+    width: 100%;
+    visibility: middle;
   }
 }
 
-@mixin card-img {
-  width: 100%;
-  vertical-align: middle;
+@mixin card-width_mediaquery($as-phone, $as-pad, $as-pc) {
+  flex: 0 0 100%;
+  @include mediaquery_phone {
+    flex: 0 0 $as-phone;
+  }
+  @include mediaquery_pad {
+    flex: 0 0 $as-pad;
+  }
+  @include mediaquery_pc {
+    flex: 0 0 $as-pc;
+  }
 }
