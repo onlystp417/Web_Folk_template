@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-xl-4 {
+  @include mediaquery_pc {
+    flex: 0 0 33.33%;
+  }
+}
+
+.col-m-6 {
+  @include mediaquery_pad {
+    flex: 0 0 50%;
+  }
+}
+
+.col-s-12 {
+  @include mediaquery_pc {
+    flex: 0 0 100%;
+  }
+}
