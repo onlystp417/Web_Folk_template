@@ -1,10 +1,11 @@
 @import "global/reset";
 @import "global/color";
 @import "global/typography";
+@import "global/mediaquery";
 
-@import "component/flexbox";
-@import "component/dot";
 @import "component/card";
+@import "component/grid";
+@import "component/dot";
 @import "component/label";
 @import "component/button";
 

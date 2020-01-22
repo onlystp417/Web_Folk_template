@@ -18,7 +18,7 @@ $pc-width: 992px;
   }
 }
 
-@mixin mediaquery_pc{
+@mixin mediaquery_pc {
   @media all and (min-width: $pc-width){
       @content;
   }

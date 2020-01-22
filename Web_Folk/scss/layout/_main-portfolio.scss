@@ -1,6 +1,4 @@
 .portfolio {
-  position: relative;
-  @include flexbox;
   .label {
     display: block;
     position: absolute;
@@ -25,11 +23,7 @@
       @include arrow;
     }
   }
-  a + a {
-    @include card(50%, 33.33%, 25%);
-    img {
-      @include card-img;
-    }
+  .card {
     div {
       position: absolute;
       top: 0;

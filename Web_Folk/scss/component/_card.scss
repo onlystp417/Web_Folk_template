@@ -5,22 +5,9 @@
 .card {
   display: block;
   position: relative;
-  @include card-width_mediaquery(100%, 100%, 50%);
+  flex: 0 0 100%;
   img {
     width: 100%;
-    visibility: middle;
-  }
-}
-
-@mixin card-width_mediaquery($as-phone, $as-pad, $as-pc) {
-  flex: 0 0 100%;
-  @include mediaquery_phone {
-    flex: 0 0 $as-phone;
-  }
-  @include mediaquery_pad {
-    flex: 0 0 $as-pad;
-  }
-  @include mediaquery_pc {
-    flex: 0 0 $as-pc;
+    vertical-align: middle;
   }
 }

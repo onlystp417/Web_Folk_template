@@ -2,22 +2,23 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
-.col-xl-4 {
-  @include mediaquery_pc {
-    flex: 0 0 33.33%;
-  }
-}
-
-.col-m-6 {
-  @include mediaquery_pad {
+.col-phone-6 {
+  @include mediaquery_phone {
     flex: 0 0 50%;
   }
 }
 
-.col-s-12 {
+.col-pad-4 {
+  @include mediaquery_pad {
+    flex: 0 0 33.33%;
+  }
+}
+
+.col-pc-3 {
   @include mediaquery_pc {
-    flex: 0 0 100%;
+    flex: 0 0 25%;
   }
 }
