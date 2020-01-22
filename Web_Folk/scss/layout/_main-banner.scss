@@ -5,6 +5,9 @@
   padding-bottom: 15vh;
   text-align: center;
   color: $white;
+  @media (max-height: 360px) {
+    padding-top: 10vh;
+  }
   h1 {
     span:first-child {
       text-transform: uppercase;
@@ -27,6 +30,9 @@
     margin-bottom: 15vh;
     @include mediaquery_pc {
       font-size: 1.5em;
+    }
+    @media (max-height: 360px) {
+      margin-bottom: 8vh;
     }
   }
   p {
