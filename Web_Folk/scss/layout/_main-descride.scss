@@ -6,6 +6,8 @@
     background-size: 200%;
   }
   article {
+    column-count: 1;
+    column-gap: 0;
     @media (min-width: 992px) {
       column-count: 2;
       column-gap: 9em;
@@ -29,10 +31,10 @@
       }
     }
     .gutter::before {
+      content: "";
+      height: 260px;
       @media (min-width: 992px) {
-        content: "";
         display: block;
-        height: 260px;
       }
     }
   }
@@ -46,6 +48,7 @@
 }
 
 .switch {
+  display: block;
   @media (min-width: 992px) {
     display: none;
   }
