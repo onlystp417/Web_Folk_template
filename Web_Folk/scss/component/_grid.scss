@@ -11,6 +11,12 @@
   }
 }
 
+.col-pad-6 {
+  @include mediaquery_pad {
+    flex: 0 0 50%;
+  }
+}
+
 .col-pad-4 {
   @include mediaquery_pad {
     flex: 0 0 33.33%;

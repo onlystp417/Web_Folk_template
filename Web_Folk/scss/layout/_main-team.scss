@@ -1,9 +1,4 @@
-.flexbox {
-  @include flexbox;
-}
-
 .team {
-  @include flexbox;
   > h4 {
     flex: 0 0 100%;
     margin-bottom: 35px;
@@ -35,10 +30,9 @@
   flex: 0 0 100%;
   padding: 0 18%;
   > div {
-    @include card(100%, 50%, 50%);
     margin-bottom: 40px;
+    padding: 0 10px;
     img {
-      @include card-img;
       margin-bottom: 20px;
     }
     h2 {
