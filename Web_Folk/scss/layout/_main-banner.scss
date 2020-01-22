@@ -9,13 +9,13 @@
     span:first-child {
       text-transform: uppercase;
       font: italic 48px $libre;
-      @media (min-width: 992px) {
+      @include mediaquery_pc {
         font-size: 60px;
       }
     }
     span:last-child {
       font: italic 48px $lobster;
-      @media (min-width: 992px) {
+      @include mediaquery_pc {
         font-size: 60px;
       }
     }
@@ -25,7 +25,7 @@
     font: normal 1em $libre;
     letter-spacing: .3em;
     margin-bottom: 15vh;
-    @media (min-width: 992px) {
+    @include mediaquery_pc {
       font-size: 1.5em;
     }
   }
@@ -34,7 +34,7 @@
     margin: auto;
     margin-bottom: 5vh;
     font: normal 1em/1.5 $libre;
-    @media (min-width: 992px) {
+    @include mediaquery_pc {
       width: 400px;
       font-size: 1.25em;
     }

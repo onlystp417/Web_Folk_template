@@ -2,13 +2,13 @@
   background: url('../images/sea-horse-bg.jpg') center/cover no-repeat fixed;
   padding: 80px 8% 30px 8%;
   color: $white;
-  @media (min-width: 992px) {
+  @include mediaquery_pc {
     background-size: 200%;
   }
   article {
     column-count: 1;
     column-gap: 0;
-    @media (min-width: 992px) {
+    @include mediaquery_pc {
       column-count: 2;
       column-gap: 9em;
     }
@@ -33,7 +33,7 @@
     .gutter::before {
       content: "";
       height: 260px;
-      @media (min-width: 992px) {
+      @include mediaquery_pc {
         display: block;
       }
     }
@@ -49,7 +49,7 @@
 
 .switch {
   display: block;
-  @media (min-width: 992px) {
+  @include mediaquery_pc {
     display: none;
   }
 }
