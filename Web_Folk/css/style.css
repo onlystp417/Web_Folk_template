@@ -74,46 +74,54 @@ header {
   padding-bottom: 15vh;
   text-align: center;
   color: #fff; }
-  /* line 9, scss/layout/_main-banner.scss */
+  @media (max-height: 360px) {
+    /* line 1, scss/layout/_main-banner.scss */
+    .banner {
+      padding-top: 10vh; } }
+  /* line 12, scss/layout/_main-banner.scss */
   .banner h1 span:first-child {
     text-transform: uppercase;
     font: italic 48px "Libre Baskerville", "Arial", "Sans-serif"; }
     @media all and (min-width: 992px) {
-      /* line 9, scss/layout/_main-banner.scss */
+      /* line 12, scss/layout/_main-banner.scss */
       .banner h1 span:first-child {
         font-size: 60px; } }
-  /* line 16, scss/layout/_main-banner.scss */
+  /* line 19, scss/layout/_main-banner.scss */
   .banner h1 span:last-child {
     font: italic 48px "Lobster", "Arial", "Sans-serif"; }
     @media all and (min-width: 992px) {
-      /* line 16, scss/layout/_main-banner.scss */
+      /* line 19, scss/layout/_main-banner.scss */
       .banner h1 span:last-child {
         font-size: 60px; } }
-  /* line 23, scss/layout/_main-banner.scss */
+  /* line 26, scss/layout/_main-banner.scss */
   .banner h2 {
     text-transform: capitalize;
     font: normal 1em "Libre Baskerville", "Arial", "Sans-serif";
     letter-spacing: .3em;
     margin-bottom: 15vh; }
     @media all and (min-width: 992px) {
-      /* line 23, scss/layout/_main-banner.scss */
+      /* line 26, scss/layout/_main-banner.scss */
       .banner h2 {
         font-size: 1.5em; } }
-  /* line 32, scss/layout/_main-banner.scss */
+    @media (max-height: 360px) {
+      /* line 26, scss/layout/_main-banner.scss */
+      .banner h2 {
+        margin-bottom: 8vh; } }
+  /* line 38, scss/layout/_main-banner.scss */
   .banner p {
     width: 300px;
     margin: auto;
     margin-bottom: 5vh;
     font: normal 1em/1.5 "Libre Baskerville", "Arial", "Sans-serif"; }
     @media all and (min-width: 992px) {
-      /* line 32, scss/layout/_main-banner.scss */
+      /* line 38, scss/layout/_main-banner.scss */
       .banner p {
         width: 400px;
         font-size: 1.25em; } }
-  /* line 42, scss/layout/_main-banner.scss */
+  /* line 48, scss/layout/_main-banner.scss */
   .banner p:first-letter {
     text-transform: uppercase; }
-  /* line 45, scss/layout/_main-banner.scss */
+  /* line 51, scss/layout/_main-banner.scss */
   .banner > span {
     display: block;
     margin: auto;
@@ -124,7 +132,7 @@ header {
     margin-bottom: 3vh;
     display: none; }
     @media all and (min-height: 480px) {
-      /* line 45, scss/layout/_main-banner.scss */
+      /* line 51, scss/layout/_main-banner.scss */
       .banner > span {
         display: block; } }
 
