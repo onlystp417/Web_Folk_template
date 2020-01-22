@@ -33,6 +33,7 @@
       background: $fuchsia-opacity;
       text-align: center;
       opacity: 0;
+      transition: .5s;
       &::before {
         content: "";
         display: inline-block;
@@ -41,7 +42,6 @@
       }
       &:hover {
         opacity: 1;
-        transition: .5s;
       }
     }
     h3 {
